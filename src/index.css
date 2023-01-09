@@ -1,13 +1,82 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.calculator {
+    position: relative;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input {
+    border: none;
+    width: 100%;
+    height: 100px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 34px !important;
+}
+
+input::placeholder {
+    color: #4d4e4d;
+}
+
+.back-click {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.back-click .back-btn {
+    background-color: transparent;
+    border: none;
+    color: #03b60c;
+    font-size: 20px;
+    transition: color .3s;
+}
+
+.back-click .back-btn:hover {
+    color: #04930b;
+}
+
+.more-number-btn button,
+.number-btn button {
+    margin-bottom: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    font-weight: 600;
+    border: none;
+    color: #4d4e4d;
+    background-color: #eef2ee;
+    transition: background-color .3s;
+}
+
+.more-number-btn button:hover,
+.number-btn button:hover {
+    background-color: #dfdede;
+}
+
+.number-btn {
+    margin-right: 35px;
+}
+
+.c-color {
+    color: #04930b !important;
+}
+
+.c-red {
+    color: #ea2821 !important;
+}
+
+.entry-point {
+    color: #ffffff !important;
+    background-color: #03b60c !important;
+    transition: background-color .3s;
+}
+
+.entry-point:hover {
+    background-color: #04930b !important;
+
 }
